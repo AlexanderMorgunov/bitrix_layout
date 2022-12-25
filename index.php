@@ -52,5 +52,4 @@ $APPLICATION->SetTitle("Door discont");?>
   </body>
 </html>
 
-
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
