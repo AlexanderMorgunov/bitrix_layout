@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"logo", 
+		"/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"hamburger", 
+		"/hamburger/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"phone", 
+		"", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"search", 
+		"/search/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

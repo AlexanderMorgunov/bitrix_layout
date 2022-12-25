@@ -1,0 +1,392 @@
+@import url("./fonts.css");
+@import url("./constans.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face { 
+    font-family: "CeraProThin";
+    src: url("../fonts/CeraProThin/CeraProThin.eot");
+    src: url("../fonts/CeraProThin/CeraProThin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CeraProThin/CeraProThin.woff") format("woff"),
+    url("../fonts/CeraProThin/CeraProThin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {
+    width: 100vw;
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 114px;
+}
+.navbar_header {
+    width: 100vw;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 15px rgba(53, 64, 82, 0.32);
+}
+.toolbar {
+    width: 1626px;
+    display: grid;
+    grid-template-columns: 787px 557px 192px 43px 36px;
+    align-items:center;
+}
+li {
+    list-style: none;
+}
+.header_phone_list_item {
+    align-self: start;
+}
+
+.toolbar_hamburger {
+    width: 30px;
+    height: 30px;
+    padding: .75px;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.toolbar_hamburger_dash {
+    width: 26.5px;
+    height: 2.5px;
+    background-color: var(--black-text-color);
+    border-radius: 4px;
+}
+.header_phone {
+    color: var(--black-text-color);
+    text-decoration: none;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+.header_phone_and_search_wrapper {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.header_phone_and_search_dash {
+    width: 1px;
+    height: 25px;
+    background-color:var(--gray-text-color);
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+.main_banner {
+    margin: 43px 22px 0 0;
+    width: 1630px;
+    height: 616px;
+    border-radius:15px;
+    background: var(--light-img-color) url("../img/Mask\ Group.png") no-repeat right;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.main_banner_container {
+    color: var(--black-text-color);
+    padding: 23px 0 63px 112px;
+}
+
+.main_banner_offer_header {
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 80px;
+    margin-top: 73px;
+    margin-bottom: 30px;
+}
+.main_banner_offer_text {
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    padding-bottom: 54px;
+}
+
+.main_banner_btn {
+    width: 230px;
+    height: 60px;
+    background: var(--red-img-color);
+    border: 1px solid var(--red-img-color);
+    border-radius: 50px;
+    color: white;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 30px 0 40px;
+}
+.main_banner_btn:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 1s;
+}
+.dash_container {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:289px;
+    left: 276px;
+
+}
+.dash_gray {
+    width: 7px;
+    height: 7px;
+    background-color:var(--gray-text-color);
+    border-radius:100%;
+    border:none;
+}
+.dash_gray:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all 1s;
+}
+.dash_dark {
+    width: 7px;
+    height: 7px;
+    background-color:var(--black-text-color);
+    border-radius:100%;
+    border:none;
+}
+.dash_dark:hover {
+    cursor: pointer;
+    transform: scale(2);
+    transition: all 1s;
+}
+.sidebar_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 756px;
+    left:1103px;
+    top:25px;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+    justify-content: space-around;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    align-items:center;
+}
+.rotate_text {
+    transform: rotate(90deg);
+}
+.sidebar > li > a {
+    text-decoration: none;
+    color: var(--black-text-color);
+}
+.line_one {
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    background-color:var(--gray-text-color);
+    right: 26px;
+    top:2px;
+}
+.line_two {
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    background-color:var(--gray-text-color);
+    right: 26px;
+    top:175px
+}
+.line_three {
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    background-color:var(--gray-text-color);
+    right: 26px;
+    top:327px
+}
+.line_four {
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    background-color:var(--gray-text-color);
+    right: 26px;
+    top:488px
+}
+.compilation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 162px;
+}
+.compilation_carousel_container {
+    width: 1626px;
+    overflow: hidden;
+    display: flex;
+}
+.compilation_header {
+    padding: 0 0 42px 55px;
+    width: 100%;
+}
+.compilation_header > h2{
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--black-text-color);
+}
+.slider-inner {
+    display: flex;
+    width: 1626px;
+}
+.slide {
+    margin-right: 25px;
+}
+.arrow {
+    background-color:white;
+    border:none;
+}
+.arrow>img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .5s;
+}
+.carousel_wrapper {
+    display: flex;
+    width: 1755px;
+}
+.request {
+    width: 1626px;
+    height: 385px;
+    background: var(--light-img-color) url("./img/Mask\ Group_below.png") no-repeat right;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 68px 0 0 109px;
+}
+.request_header {
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: var(--black-text-color);
+    margin-bottom: 37px;
+}
+.request-input {
+    width: 370px;
+    height: 59px;
+    border: solid 1px var(--gray-text-color);
+    border-radius: 32px;
+    margin-right: 17px;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: var(--light-img-color);
+    padding-left: 52px;
+    margin-bottom: 27px;
+}
+.request_input_cycle {
+ width: 6px;   
+ height: 6px;
+ background-color: var(--green-img-color);
+ border-radius:100%;
+ position: relative;
+ left: 38px;
+ top: 41px;
+}
+.request_input_cycle2 {
+    width: 6px;   
+    height: 6px;
+    background-color: var(--green-img-color);
+    border-radius:100%;
+    position: relative;
+    top: 34px;
+    left: 430px;
+}
+.request-checkbox_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.request-checkbox_container {
+    display: flex;
+    margin-right: 47px;
+}
+.request_checkbox_text {
+    width: 446px;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--dark-gray-text-color);
+    margin-left: 13px;
+}
+.green-mark {
+    text-decoration: underline;
+    color:var(--green-img-color);
+}
+input[type="checkbox"]  {
+    display: none;
+}
+input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: .5px var(--gray-text-color) solid;
+    border-radius:100%;
+    margin-top: 4px;
+}
+input[type="checkbox"]:checked + label span {
+    background:url(../img/svg/checked.svg) 7px center no-repeat;
+}
+.request_btn {
+    width: 230px;
+    height: 60px;
+    background: var(--red-img-color);
+    border: 1px solid var(--red-img-color);
+    border-radius: 50px;
+    color: white;
+    font-family: 'CeraPro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 22px 0 74px;
+}
+.request_btn:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 1s;
+}
